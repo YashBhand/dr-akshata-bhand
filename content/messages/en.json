@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "title": "Dr. Akshada Chandrakant Bhand | Veterinary Physician & Cardiologist",
+    "description": "Compassionate veterinary care backed by research and clinical excellence. Book appointments for dogs, cats, cattle, and more in Maharashtra."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "specializations": "Specializations",
+    "research": "Research",
+    "blog": "Blog",
+    "farmerCorner": "Farmer Corner",
+    "petParent": "Pet Parent",
+    "contact": "Contact",
+    "bookAppointment": "Book Appointment",
+    "testimonials": "Testimonials",
+    "gallery": "Gallery",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "name": "Dr. Akshada Chandrakant Bhand",
+    "qualifications": "BVSc & AH | MVSc | PhD (Veterinary Medicine)",
+    "tagline": "Compassionate Veterinary Care Backed by Research and Clinical Excellence.",
+    "subtitle": "Veterinary Physician • Veterinary Cardiologist • Clinical Researcher",
+    "bookAppointment": "Book Appointment",
+    "emergencyCall": "Emergency Call",
+    "whatsappConsult": "WhatsApp Consultation",
+    "myResearch": "My Research"
+  },
+  "about": {
+    "title": "About Dr. Akshada",
+    "bio": "Dr. Akshada Chandrakant Bhand is a dedicated Veterinary Physician, Veterinary Cardiologist, Clinical Researcher, and PhD scholar committed to advancing animal healthcare through evidence-based medicine, innovation, and deep compassion. With extensive experience in diagnosing and treating companion animals and livestock, she bridges academic excellence with practical clinical expertise. Her research spans veterinary cardiology, canine internal medicine, infectious diseases, hematology, and advanced diagnostic techniques. She has published numerous scientific papers and case reports in reputed journals. Through her practice, she aims to improve every animal's quality of life while contributing significantly to veterinary science.",
+    "publications": "Research Publications",
+    "citations": "Citations",
+    "experience": "Years of Clinical Experience",
+    "patients": "Patients Treated",
+    "cardiacCases": "Cardiac Cases"
+  },
+  "specializations": {
+    "title": "Specializations",
+    "items": {
+      "cardiology": "Veterinary Cardiology",
+      "companion": "Companion Animal Medicine",
+      "largeAnimal": "Large Animal Medicine",
+      "internal": "Internal Medicine",
+      "pathology": "Clinical Pathology",
+      "hematology": "Hematology",
+      "infectious": "Infectious Diseases",
+      "canine": "Canine Medicine",
+      "feline": "Feline Medicine",
+      "rabbit": "Rabbit Medicine",
+      "equine": "Equine Medicine",
+      "emergency": "Emergency & Critical Care",
+      "preventive": "Preventive Healthcare"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "general": "General Services",
+    "specialized": "Specialized Services",
+    "items": {
+      "checkup": "Complete Health Check-up",
+      "vaccination": "Vaccination",
+      "lab": "Laboratory Diagnostics",
+      "xray": "Digital X-ray & Ultrasound",
+      "ecg": "ECG & Echocardiography",
+      "cardiac": "Cardiac Disease Management",
+      "kidney": "Kidney & Liver Disorder Treatment",
+      "parasitic": "Parasitic & Tick-borne Disease Treatment",
+      "dental": "Dental Care",
+      "ai": "Artificial Insemination (Large Animals)",
+      "nutrition": "Nutrition Planning",
+      "online": "Online Consultation",
+      "homeVisit": "Home Visits"
+    }
+  },
+  "animals": {
+    "title": "Animals Treated",
+    "dogs": "Dogs",
+    "cats": "Cats",
+    "cattle": "Cattle",
+    "goats": "Goats",
+    "sheep": "Sheep",
+    "horses": "Horses",
+    "rabbits": "Rabbits",
+    "birds": "Birds",
+    "poultry": "Poultry",
+    "exotic": "Exotic Pets"
+  },
+  "research": {
+    "title": "Research & Publications",
+    "subtitle": "Advancing veterinary science through evidence-based research",
+    "viewScholar": "View Google Scholar",
+    "readPaper": "Read Paper",
+    "downloadPdf": "Download PDF",
+    "metrics": {
+      "publications": "Total Publications",
+      "citations": "Citations",
+      "hIndex": "h-index",
+      "i10Index": "i10-index",
+      "years": "Years of Research"
+    },
+    "caseReports": "Case Reports & Success Stories"
+  },
+  "cases": {
+    "evans": {
+      "title": "Evans Syndrome in a Labrador",
+      "problem": "Severe autoimmune hemolytic anemia with thrombocytopenia",
+      "treatment": "Immunosuppressive therapy and supportive care",
+      "outcome": "Successful management with stable recovery",
+      "quote": "Dr. Akshada saved our Labrador from a critical condition with expert care."
+    },
+    "aspergillosis": {
+      "title": "Sino-nasal Aspergillosis Recovery",
+      "problem": "Chronic nasal fungal infection in a German Shepherd",
+      "treatment": "Antifungal therapy and surgical debridement",
+      "outcome": "Complete recovery with improved quality of life",
+      "quote": "After months of suffering, our dog is healthy again thanks to Dr. Akshada."
+    },
+    "pacemaker": {
+      "title": "Pacemaker Implantation Story",
+      "problem": "Third-degree AV block in a small breed dog",
+      "treatment": "Permanent pacemaker implantation",
+      "outcome": "Patient returned to normal activity levels",
+      "quote": "The pacemaker procedure gave our pet a new lease on life."
+    }
+  },
+  "blog": {
+    "title": "Animal Health Library",
+    "subtitle": "Expert articles for pet owners and farmers",
+    "askDoctor": "Ask Dr. Akshada",
+    "askPlaceholder": "Your question...",
+    "submit": "Submit Question",
+    "filterAll": "All",
+    "categories": {
+      "puppy": "Puppy & Kitten Care",
+      "vaccination": "Vaccination Schedules",
+      "heart": "Heart Disease in Dogs",
+      "tick": "Tick Fever Prevention",
+      "cow": "Cow Nutrition & Milk Production",
+      "firstAid": "First Aid for Pets"
+    }
+  },
+  "farmer": {
+    "title": "Farmer Corner",
+    "subtitle": "Expert guidance for livestock health and farm management",
+    "topics": {
+      "cattle": "Cattle & Buffalo Health Management",
+      "ai": "Artificial Insemination",
+      "goats": "Goat & Sheep Rearing",
+      "poultry": "Poultry Farming",
+      "vaccination": "Vaccination Schedules",
+      "schemes": "Government Schemes",
+      "alerts": "Disease Alerts",
+      "emergency": "Emergency Procedures"
+    }
+  },
+  "petParent": {
+    "title": "Pet Parent Corner",
+    "subtitle": "Tools and resources for responsible pet care",
+    "vaccinationCalendar": "Vaccination Calendar",
+    "growthTracker": "Pet Growth Tracker",
+    "medicineReminder": "Medicine Reminder",
+    "nutritionGuide": "Nutrition Guide by Breed",
+    "bmiCalculator": "Pet BMI Calculator",
+    "ageCalculator": "Human to Dog Age Calculator",
+    "firstAid": "First-aid Emergency Steps",
+    "symptomChecker": "AI Symptom Checker",
+    "symptomDisclaimer": "This is informational, not a diagnosis. Please consult a veterinarian.",
+    "selectAnimal": "Select Animal",
+    "enterSymptoms": "Enter Symptoms",
+    "checkSymptoms": "Check Symptoms",
+    "possibleCauses": "Possible Causes",
+    "recommendation": "Recommendation"
+  },
+  "booking": {
+    "title": "Online Consultation & Booking",
+    "subtitle": "Schedule an appointment with Dr. Akshada",
+    "step1": "Owner Details",
+    "step2": "Pet Details",
+    "step3": "Appointment",
+    "step4": "Payment",
+    "ownerName": "Owner Name",
+    "phone": "Phone",
+    "email": "Email",
+    "animalType": "Animal Type",
+    "breed": "Breed",
+    "age": "Age",
+    "weight": "Weight",
+    "complaint": "Chief Complaint",
+    "preferredDateTime": "Preferred Date & Time",
+    "uploadReports": "Upload Previous Reports (optional)",
+    "submit": "Submit Booking",
+    "payNow": "Pay Consultation Fee",
+    "success": "Booking Confirmed!",
+    "reference": "Reference Number",
+    "consultationFee": "Consultation Fee"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What pet owners say about us"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Our clinic, equipment, and happy patients"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": {
+      "dogs": {
+        "q": "Do you treat dogs?",
+        "a": "Yes, we provide comprehensive care for dogs including cardiac evaluation, internal medicine, surgery, and emergency care."
+      },
+      "homeVisit": {
+        "q": "Can I book a home visit?",
+        "a": "Yes, home visits are available in Nashik and surrounding areas. Please book in advance through our online form or WhatsApp."
+      },
+      "emergency": {
+        "q": "What are your emergency hours?",
+        "a": "Emergency services are available 24/7. Call +91 8788198731 for urgent cases."
+      },
+      "prescription": {
+        "q": "Do you provide online prescriptions?",
+        "a": "Yes, existing patients can request repeat prescriptions through our online portal after a brief consultation."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "address": "Address",
+    "hours": "Working Hours",
+    "hoursValue": "Mon-Sat 10 AM – 7 PM, Emergency 24/7",
+    "sendMessage": "Send Message",
+    "name": "Name",
+    "message": "Message"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© Dr. Akshada Chandrakant Bhand. All rights reserved."
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "readMore": "Read More",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit"
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "bookings": "Bookings",
+    "posts": "Blog Posts",
+    "testimonials": "Testimonials",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "myPets": "My Pets",
+    "healthRecords": "Health Records",
+    "prescriptions": "Prescription Requests"
+  }
+}

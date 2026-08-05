@@ -4,24 +4,56 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1a1a;
+  --surface: #f7f9fb;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #0f1419;
+  --foreground: #f0f0f0;
+  --surface: #1a2332;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+  line-height: 1.6;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 py-16 md:px-8 md:py-24 lg:px-16;
+  }
+  .container-custom {
+    @apply mx-auto max-w-7xl;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e7d32;
+  border-radius: 4px;
+}
+
+::selection {
+  background: #2e7d3280;
+  color: white;
 }

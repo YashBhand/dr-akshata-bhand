@@ -20,12 +20,20 @@
 .DS_Store
 *.pem
 
+# IDE / editor
+.agents/
+.claude/
+.windsurf/
+.vscode/
+.idea/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
 
 # vercel
@@ -34,3 +42,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+/lib/generated/prisma
