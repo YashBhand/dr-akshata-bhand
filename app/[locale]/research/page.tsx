@@ -57,12 +57,12 @@ export default async function ResearchPage({ params: { locale } }: PageProps) {
                 </a>
               </div>
             </div>
-            <div className="overflow-hidden rounded-3xl shadow-2xl aspect-[4/3] max-w-md mx-auto">
+            <div className="overflow-hidden rounded-3xl shadow-2xl aspect-[4/5] max-w-sm mx-auto">
               <Image
                 src="/images/dr-akshata-bhand.jpg"
                 alt="Dr. Akshata Bhand — PhD Scholar, Division of Medicine, IVRI"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-[center_28%]"
                 unoptimized
               />
             </div>

@@ -154,12 +154,12 @@ export default async function FarmerCornerPage({ params: { locale } }: PageProps
               </div>
             </div>
             <div className="relative">
-              <div className="overflow-hidden rounded-3xl shadow-2xl aspect-[4/3]">
+              <div className="overflow-hidden rounded-3xl shadow-2xl aspect-[4/5] max-w-sm mx-auto">
                 <Image
                   src="/images/dr-akshata-bhand.jpg"
                   alt="Dr. Akshata Bhand — Veterinary Physician and Livestock Development Officer"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-[center_28%]"
                   unoptimized
                 />
               </div>

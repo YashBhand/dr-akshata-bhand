@@ -166,7 +166,7 @@ export default async function HomePage({ params: { locale } }: PageProps) {
                   src="/images/dr-akshata-bhand.jpg"
                   alt="Dr. Akshata Bhand — Veterinary Physician & Livestock Development Officer, Nandgaon"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-[center_28%]"
                   priority
                   unoptimized
                 />
@@ -241,14 +241,16 @@ export default async function HomePage({ params: { locale } }: PageProps) {
       <section className="section-padding bg-surface dark:bg-gray-800/50">
         <div className="container-custom">
           <div className="grid items-center gap-12 lg:grid-cols-2">
-            <div className="relative overflow-hidden rounded-3xl shadow-xl aspect-[4/3]">
-              <Image
-                src="/images/dr-akshata-bhand.jpg"
-                alt="Dr. Akshata Bhand in her clinical setting"
-                fill
-                className="object-cover object-top"
-                unoptimized
-              />
+            <div className="relative mx-auto w-full max-w-md">
+              <div className="relative overflow-hidden rounded-3xl border-4 border-white dark:border-gray-800 shadow-2xl aspect-[4/5]">
+                <Image
+                  src="/images/dr-akshata-bhand.jpg"
+                  alt="Dr. Akshata Bhand in her clinical setting"
+                  fill
+                  className="object-cover object-[center_28%]"
+                  unoptimized
+                />
+              </div>
             </div>
             <div>
               <SectionHeading title={aboutT("title")} centered={false} />
