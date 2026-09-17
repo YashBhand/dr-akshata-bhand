@@ -22,7 +22,7 @@ type PageProps = {
   params: { locale: string };
 };
 
-const topicIcons: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+const topicIcons: Record<string, any> = {
   cattle: Stethoscope,
   ai: Activity,
   goats: Sprout,
@@ -148,19 +148,19 @@ export default async function FarmerCornerPage({ params: { locale } }: PageProps
                 <a href="tel:+918788198731">
                   <Button size="lg" variant="emergency" className="gap-2">
                     <Phone size={20} />
-                    Emergency Vet
+                    Call for Emergency
                   </Button>
                 </a>
               </div>
             </div>
             <div className="relative">
-              <div className="overflow-hidden rounded-3xl shadow-2xl">
+              <div className="overflow-hidden rounded-3xl shadow-2xl aspect-[4/3]">
                 <Image
-                  src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&h=600&fit=crop"
-                  alt="Farmer with cattle"
-                  width={800}
-                  height={600}
-                  className="h-full w-full object-cover"
+                  src="/images/dr-akshata-bhand.jpg"
+                  alt="Dr. Akshata Bhand — Veterinary Physician and Livestock Development Officer"
+                  fill
+                  className="object-cover object-top"
+                  unoptimized
                 />
               </div>
             </div>
@@ -293,8 +293,17 @@ export default async function FarmerCornerPage({ params: { locale } }: PageProps
                 <Phone size={28} />
               </div>
               <div>
-                <p className="text-sm text-white/70">24/7 Emergency</p>
+                <p className="text-sm text-white/70">Dr. Akshata Bhand (Direct / Urgent Calls)</p>
                 <p className="text-2xl font-bold">+91 8788198731</p>
+              </div>
+            </a>
+            <a href="tel:+918262883668" className="flex items-center gap-4 rounded-2xl bg-white/15 backdrop-blur p-6 hover:bg-white/20 transition-colors">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-emergency shrink-0">
+                <Phone size={28} />
+              </div>
+              <div>
+                <p className="text-sm text-white/70">Yash Bhand (Assistance)</p>
+                <p className="text-2xl font-bold">+91 8262883668</p>
               </div>
             </a>
             <Link href={`/${locale}/contact`} className="flex items-center gap-4 rounded-2xl bg-white/15 backdrop-blur p-6 hover:bg-white/20 transition-colors">

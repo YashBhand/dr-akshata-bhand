@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Akshada Chandrakant Bhand | Veterinary Physician & Cardiologist",
-  description: "Compassionate veterinary care backed by research and clinical excellence. Book appointments for dogs, cats, cattle, and more in Maharashtra.",
+  title: "Dr. Akshata Bhand | Livestock Development Officer at Nandgaon (Class I Government Officer)",
+  description: "Dr. Akshata Bhand - Livestock Development Officer at Nandgaon, Class I Government Officer. Veterinary Physician & Cardiologist. Book appointments for pets and livestock in Nandgaon, Nashik, Maharashtra.",
 };
 
 export default function RootLayout({

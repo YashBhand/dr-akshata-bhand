@@ -1,100 +1,116 @@
 {
   "publications": [
     {
-      "title": "Pacemaker implantation in small animal practice: A comprehensive review",
-      "journal": "Journal of Veterinary Cardiology",
+      "title": "Pacemaker implantation in small animal practice: indications, types of pacing and implantation technique",
       "year": 2024,
       "citations": 2,
+      "journal": null,
       "pdfUrl": null,
-      "scholarUrl": "https://scholar.google.com"
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:d1gkVwhDpl0C"
     },
     {
-      "title": "Ehrlichia canis infection in a Labrador retriever dog: A case report",
-      "journal": "Veterinary World",
+      "title": "Ehrlichia canis infection in a labrador retriever dog: A case report",
       "year": 2024,
       "citations": 1,
+      "journal": null,
       "pdfUrl": null,
-      "scholarUrl": "https://scholar.google.com"
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:9yKSN-GCB0IC"
     },
     {
-      "title": "Anaemia in bovines: Diagnostic approach and management strategies",
-      "journal": "Indian Journal of Animal Sciences",
-      "year": 2025,
-      "citations": 0,
-      "pdfUrl": null,
-      "scholarUrl": "https://scholar.google.com"
-    },
-    {
-      "title": "Canine dilated cardiomyopathy: Comprehensive evaluation and treatment outcomes",
-      "journal": "Journal of Small Animal Practice",
-      "year": 2025,
-      "citations": 0,
-      "pdfUrl": null,
-      "scholarUrl": "https://scholar.google.com"
-    },
-    {
-      "title": "Evans syndrome in dogs: Clinical presentation and immunosuppressive therapy",
-      "journal": "Veterinary Immunology and Immunopathology",
+      "title": "Anaemia in bovines: haematobiochemical alterations with diagnostic and clinical significance",
       "year": 2024,
       "citations": 0,
+      "journal": null,
       "pdfUrl": null,
-      "scholarUrl": "https://scholar.google.com"
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:YsMSGLbcyi4C"
     },
     {
-      "title": "Sino-nasal aspergillosis in German Shepherd: Diagnostic imaging and treatment",
-      "journal": "Veterinary Radiology & Ultrasound",
+      "title": "A comprehensive evaluation of diagnostic modalities and contemporary therapeutic advances in canine dilated cardiomyopathy",
       "year": 2024,
       "citations": 0,
+      "journal": null,
       "pdfUrl": null,
-      "scholarUrl": "https://scholar.google.com"
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:Tyk-4Ss8FVUC"
     },
     {
-      "title": "Tick-borne diseases in companion animals: A Maharashtra perspective",
-      "journal": "Indian Veterinary Journal",
+      "title": "Diagnosis and Management of Spirocercosis in a Beagle Dog: A Case Report",
       "year": 2024,
       "citations": 0,
+      "journal": null,
       "pdfUrl": null,
-      "scholarUrl": "https://scholar.google.com"
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:qjMakFHDy7sC"
     },
     {
-      "title": "Hematological abnormalities in canine heart disease",
-      "journal": "Research in Veterinary Science",
-      "year": 2023,
+      "title": "Therapeutic management of Paracetamol toxicity in a Mongrel dog",
+      "year": 2024,
       "citations": 0,
+      "journal": null,
       "pdfUrl": null,
-      "scholarUrl": "https://scholar.google.com"
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:ufrVoPGSRksC"
     },
     {
-      "title": "Artificial insemination outcomes in crossbred cattle: A field study",
-      "journal": "Indian Journal of Animal Reproduction",
-      "year": 2023,
+      "title": "Diagnosis and management of fungal cystitis in a Labrador dog",
+      "year": 2024,
       "citations": 0,
+      "journal": null,
       "pdfUrl": null,
-      "scholarUrl": "https://scholar.google.com"
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:WF5omc3nYNoC"
     },
     {
-      "title": "Feline hypertrophic cardiomyopathy: Echocardiographic findings",
-      "journal": "Journal of Feline Medicine and Surgery",
+      "title": "Successful management of Sino-nasal Aspergillosis and candidiasis in Labrador Retriever dog",
       "year": 2023,
       "citations": 0,
+      "journal": null,
       "pdfUrl": null,
-      "scholarUrl": "https://scholar.google.com"
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:UeHWp8X0CEIC"
     },
     {
-      "title": "Infectious disease surveillance in livestock: Emerging challenges",
-      "journal": "Tropical Animal Health and Production",
+      "title": "Evan's Syndrome Hemolytic Anemia with Thrombocytopenia in a Labrador Dog: A Case Report",
       "year": 2023,
       "citations": 0,
+      "journal": null,
       "pdfUrl": null,
-      "scholarUrl": "https://scholar.google.com"
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:zYLM7Y9cAGgC"
+    },
+    {
+      "title": "A case report on Hepatozoon canis infection in a dog",
+      "year": 2023,
+      "citations": 0,
+      "journal": null,
+      "pdfUrl": null,
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:2osOgNQ5qMEC"
+    },
+    {
+      "title": "Echocardiographic Assessment of Right Heart Indices in Dogs with Mitral Valve Disease",
+      "year": 2023,
+      "citations": 0,
+      "journal": null,
+      "pdfUrl": null,
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:IjCSPb-OGe4C"
+    },
+    {
+      "title": "Novel therapeutic approach using angiotensin receptor neprilysin inhibitors for managing tricuspid regurgitation with diastolic dysfunction in a mongrel dog",
+      "year": 2023,
+      "citations": 0,
+      "journal": null,
+      "pdfUrl": null,
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:eQOLeE2rZwMC"
+    },
+    {
+      "title": "Successful management of sarcoptic and notoedric mange coinfection in a pet rabbit",
+      "year": 2023,
+      "citations": 0,
+      "journal": null,
+      "pdfUrl": null,
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8MeKW6YAAAAJ&citation_for_view=8MeKW6YAAAAJ:W7OEmFMy1HYC"
     }
   ],
   "metrics": {
-    "totalPublications": 11,
+    "totalPublications": 13,
     "citations": 3,
-    "hIndex": 2,
-    "i10Index": 1,
-    "yearsResearch": 5
+    "hIndex": 1,
+    "i10Index": 1
   },
-  "scholarUrl": "https://scholar.google.com/citations?user=placeholder"
+  "scholarUrl": "https://scholar.google.com/citations?user=8MeKW6YAAAAJ&hl=en",
+  "note": "All publication titles verified from Google Scholar profile. Journal names and DOIs require individual verification. Metrics as of September 2025."
 }

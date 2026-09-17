@@ -1,107 +1,96 @@
 {
   "metadata": {
-    "title": "Dr. Akshada Chandrakant Bhand | Veterinary Physician & Cardiologist",
-    "description": "Compassionate veterinary care backed by research and clinical excellence. Book appointments for dogs, cats, cattle, and more in Maharashtra."
+    "title": "Dr. Akshata Bhand | Veterinary Physician & Livestock Development Officer, Nandgaon",
+    "description": "Dr. Akshata Bhand — Livestock Development Officer at Nandgaon (Class I Government Officer), veterinary physician and PhD scholar at IVRI. Veterinary care for pets and livestock in Nashik, Maharashtra. Call or WhatsApp for appointments."
   },
   "nav": {
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "specializations": "Specializations",
     "research": "Research",
-    "blog": "Blog",
+    "blog": "Knowledge Hub",
     "farmerCorner": "Farmer Corner",
-    "petParent": "Pet Parent",
     "contact": "Contact",
-    "bookAppointment": "Book Appointment",
-    "testimonials": "Testimonials",
-    "gallery": "Gallery",
-    "faq": "FAQ"
+    "bookAppointment": "Book Appointment"
   },
   "hero": {
-    "name": "Dr. Akshada Chandrakant Bhand",
-    "qualifications": "BVSc & AH | MVSc | PhD (Veterinary Medicine)",
-    "tagline": "Compassionate Veterinary Care Backed by Research and Clinical Excellence.",
-    "subtitle": "Veterinary Physician • Veterinary Cardiologist • Clinical Researcher",
+    "name": "Dr. Akshata Bhand",
+    "designation": "Livestock Development Officer, Nandgaon",
+    "designation2": "(Class I Government Officer)",
+    "qualifications": "BVSc & AH | MVSc | PhD Scholar, IVRI",
+    "tagline": "Whether your pet is unwell or your livestock needs attention, the goal is always the same — understand what is happening and decide the next step carefully.",
+    "subtitle": "Veterinary Physician • PhD Scholar (Veterinary Medicine, IVRI) • Veterinary Cardiology",
     "bookAppointment": "Book Appointment",
     "emergencyCall": "Emergency Call",
-    "whatsappConsult": "WhatsApp Consultation",
+    "whatsappConsult": "WhatsApp",
     "myResearch": "My Research"
   },
   "about": {
-    "title": "About Dr. Akshada",
-    "bio": "Dr. Akshada Chandrakant Bhand is a dedicated Veterinary Physician, Veterinary Cardiologist, Clinical Researcher, and PhD scholar committed to advancing animal healthcare through evidence-based medicine, innovation, and deep compassion. With extensive experience in diagnosing and treating companion animals and livestock, she bridges academic excellence with practical clinical expertise. Her research spans veterinary cardiology, canine internal medicine, infectious diseases, hematology, and advanced diagnostic techniques. She has published numerous scientific papers and case reports in reputed journals. Through her practice, she aims to improve every animal's quality of life while contributing significantly to veterinary science.",
+    "title": "About Dr. Akshata",
+    "bio": "Dr. Akshata Bhand is a veterinary physician based in Nandgaon, Nashik. She currently serves as Livestock Development Officer (Class I Government Officer) at Nandgaon, and is also pursuing her PhD at the Indian Veterinary Research Institute (IVRI), Division of Medicine, with a focus on veterinary cardiology. Her clinical work covers companion animals — particularly dogs and cats — as well as cattle, goats, and other livestock. She has published research in areas including cardiac disease in dogs, tick-borne infections, blood disorders, and livestock health. She also provides farmer education and is involved in artificial insemination and livestock breeding support.",
     "publications": "Research Publications",
     "citations": "Citations",
-    "experience": "Years of Clinical Experience",
+    "experience": "Clinical Experience",
     "patients": "Patients Treated",
     "cardiacCases": "Cardiac Cases"
   },
   "specializations": {
-    "title": "Specializations",
+    "title": "Clinical Interests",
     "items": {
       "cardiology": "Veterinary Cardiology",
       "companion": "Companion Animal Medicine",
       "largeAnimal": "Large Animal Medicine",
       "internal": "Internal Medicine",
-      "pathology": "Clinical Pathology",
-      "hematology": "Hematology",
-      "infectious": "Infectious Diseases",
-      "canine": "Canine Medicine",
-      "feline": "Feline Medicine",
-      "rabbit": "Rabbit Medicine",
-      "equine": "Equine Medicine",
-      "emergency": "Emergency & Critical Care",
+      "hematology": "Hematology & Blood Disorders",
+      "infectious": "Infectious & Tick-borne Diseases",
       "preventive": "Preventive Healthcare"
     }
   },
   "services": {
     "title": "Services",
-    "general": "General Services",
-    "specialized": "Specialized Services",
+    "general": "Pet Care",
+    "specialized": "Livestock & Farm Animal Care",
     "items": {
-      "checkup": "Complete Health Check-up",
+      "checkup": "Health Check-up",
       "vaccination": "Vaccination",
       "lab": "Laboratory Diagnostics",
-      "xray": "Digital X-ray & Ultrasound",
+      "xray": "X-ray & Ultrasound",
       "ecg": "ECG & Echocardiography",
-      "cardiac": "Cardiac Disease Management",
-      "kidney": "Kidney & Liver Disorder Treatment",
-      "parasitic": "Parasitic & Tick-borne Disease Treatment",
+      "cardiac": "Cardiac Evaluation & Management",
+      "kidney": "Kidney & Liver Disorders",
+      "parasitic": "Parasitic & Tick-borne Diseases",
       "dental": "Dental Care",
       "ai": "Artificial Insemination (Large Animals)",
-      "nutrition": "Nutrition Planning",
+      "nutrition": "Nutrition Guidance",
       "online": "Online Consultation",
-      "homeVisit": "Home Visits"
+      "homeVisit": "Home & Farm Visits"
     }
   },
   "animals": {
     "title": "Animals Treated",
     "dogs": "Dogs",
     "cats": "Cats",
-    "cattle": "Cattle",
+    "cattle": "Cattle & Buffalo",
     "goats": "Goats",
     "sheep": "Sheep",
-    "horses": "Horses",
     "rabbits": "Rabbits",
     "birds": "Birds",
-    "poultry": "Poultry",
-    "exotic": "Exotic Pets"
+    "poultry": "Poultry"
   },
   "research": {
     "title": "Research & Publications",
-    "subtitle": "Advancing veterinary science through evidence-based research",
-    "viewScholar": "View Google Scholar",
-    "readPaper": "Read Paper",
+    "subtitle": "Published work in veterinary medicine, cardiology, infectious diseases and livestock health. All titles verified from Google Scholar.",
+    "viewScholar": "View Google Scholar Profile",
+    "readPaper": "View on Scholar",
     "downloadPdf": "Download PDF",
     "metrics": {
-      "publications": "Total Publications",
-      "citations": "Citations",
+      "publications": "Publications",
+      "citations": "Total Citations",
       "hIndex": "h-index",
-      "i10Index": "i10-index",
-      "years": "Years of Research"
+      "i10Index": "i10-index"
     },
-    "caseReports": "Case Reports & Success Stories"
+    "caseReports": "Selected Clinical Cases",
+    "caseNote": "The following are illustrative clinical areas based on published case reports. Individual case details are drawn from published literature."
   },
   "cases": {
     "evans": {
@@ -109,51 +98,51 @@
       "problem": "Severe autoimmune hemolytic anemia with thrombocytopenia",
       "treatment": "Immunosuppressive therapy and supportive care",
       "outcome": "Successful management with stable recovery",
-      "quote": "Dr. Akshada saved our Labrador from a critical condition with expert care."
+      "source": "Published case report (see Research page)"
     },
     "aspergillosis": {
-      "title": "Sino-nasal Aspergillosis Recovery",
-      "problem": "Chronic nasal fungal infection in a German Shepherd",
-      "treatment": "Antifungal therapy and surgical debridement",
-      "outcome": "Complete recovery with improved quality of life",
-      "quote": "After months of suffering, our dog is healthy again thanks to Dr. Akshada."
+      "title": "Sino-nasal Aspergillosis in a Labrador",
+      "problem": "Chronic nasal fungal infection (Aspergillosis and candidiasis co-infection)",
+      "treatment": "Antifungal therapy with supportive management",
+      "outcome": "Successful resolution",
+      "source": "Published case report (see Research page)"
     },
     "pacemaker": {
-      "title": "Pacemaker Implantation Story",
-      "problem": "Third-degree AV block in a small breed dog",
+      "title": "Pacemaker Implantation — Small Animal",
+      "problem": "Cardiac conduction disorder requiring pacemaker intervention",
       "treatment": "Permanent pacemaker implantation",
-      "outcome": "Patient returned to normal activity levels",
-      "quote": "The pacemaker procedure gave our pet a new lease on life."
+      "outcome": "Patient returned to normal activity",
+      "source": "Published review (see Research page)"
     }
   },
   "blog": {
-    "title": "Animal Health Library",
-    "subtitle": "Expert articles for pet owners and farmers",
-    "askDoctor": "Ask Dr. Akshada",
+    "title": "Knowledge Hub",
+    "subtitle": "Articles and guides for pet owners and farmers",
+    "askDoctor": "Send a Question",
     "askPlaceholder": "Your question...",
-    "submit": "Submit Question",
+    "submit": "Submit",
     "filterAll": "All",
     "categories": {
       "puppy": "Puppy & Kitten Care",
-      "vaccination": "Vaccination Schedules",
+      "vaccination": "Vaccination",
       "heart": "Heart Disease in Dogs",
-      "tick": "Tick Fever Prevention",
-      "cow": "Cow Nutrition & Milk Production",
+      "tick": "Tick Fever",
+      "cow": "Cattle Health & Nutrition",
       "firstAid": "First Aid for Pets"
     }
   },
   "farmer": {
     "title": "Farmer Corner",
-    "subtitle": "Expert guidance for livestock health and farm management",
+    "subtitle": "Practical guidance for livestock health and farm management",
     "topics": {
-      "cattle": "Cattle & Buffalo Health Management",
+      "cattle": "Cattle & Buffalo Health",
       "ai": "Artificial Insemination",
       "goats": "Goat & Sheep Rearing",
       "poultry": "Poultry Farming",
       "vaccination": "Vaccination Schedules",
       "schemes": "Government Schemes",
       "alerts": "Disease Alerts",
-      "emergency": "Emergency Procedures"
+      "emergency": "Emergency: What to Do"
     }
   },
   "petParent": {
@@ -162,12 +151,12 @@
     "vaccinationCalendar": "Vaccination Calendar",
     "growthTracker": "Pet Growth Tracker",
     "medicineReminder": "Medicine Reminder",
-    "nutritionGuide": "Nutrition Guide by Breed",
+    "nutritionGuide": "Nutrition Guide",
     "bmiCalculator": "Pet BMI Calculator",
-    "ageCalculator": "Human to Dog Age Calculator",
-    "firstAid": "First-aid Emergency Steps",
-    "symptomChecker": "AI Symptom Checker",
-    "symptomDisclaimer": "This is informational, not a diagnosis. Please consult a veterinarian.",
+    "ageCalculator": "Dog Age Calculator",
+    "firstAid": "First Aid Steps",
+    "symptomChecker": "Symptom Checker",
+    "symptomDisclaimer": "This is general information, not a diagnosis. Please consult a veterinarian for your animal's specific condition.",
     "selectAnimal": "Select Animal",
     "enterSymptoms": "Enter Symptoms",
     "checkSymptoms": "Check Symptoms",
@@ -175,81 +164,84 @@
     "recommendation": "Recommendation"
   },
   "booking": {
-    "title": "Online Consultation & Booking",
-    "subtitle": "Schedule an appointment with Dr. Akshada",
-    "step1": "Owner Details",
-    "step2": "Pet Details",
+    "title": "Book an Appointment",
+    "subtitle": "Schedule a consultation with Dr. Akshata",
+    "step1": "Your Details",
+    "step2": "Animal Details",
     "step3": "Appointment",
-    "step4": "Payment",
-    "ownerName": "Owner Name",
-    "phone": "Phone",
+    "step4": "Review & Confirm",
+    "ownerName": "Your Name",
+    "phone": "Phone Number",
     "email": "Email",
-    "animalType": "Animal Type",
+    "animalType": "Type of Animal",
     "breed": "Breed",
     "age": "Age",
     "weight": "Weight",
-    "complaint": "Chief Complaint",
+    "complaint": "Reason for Visit",
     "preferredDateTime": "Preferred Date & Time",
     "uploadReports": "Upload Previous Reports (optional)",
-    "submit": "Submit Booking",
+    "submit": "Confirm Booking",
     "payNow": "Pay Consultation Fee",
-    "success": "Booking Confirmed!",
+    "success": "Booking Confirmed",
     "reference": "Reference Number",
-    "consultationFee": "Consultation Fee"
+    "consultationFee": "Consultation Fee",
+    "notifyOwner": "Notify me on WhatsApp & Email"
   },
   "testimonials": {
-    "title": "Testimonials",
-    "subtitle": "What pet owners say about us"
+    "title": "Patient Stories",
+    "subtitle": "Real cases from clinical practice"
   },
   "gallery": {
     "title": "Gallery",
-    "subtitle": "Our clinic, equipment, and happy patients"
+    "subtitle": "Clinical work and field visits"
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "Common Questions",
     "items": {
       "dogs": {
-        "q": "Do you treat dogs?",
-        "a": "Yes, we provide comprehensive care for dogs including cardiac evaluation, internal medicine, surgery, and emergency care."
+        "q": "Do you treat dogs and cats?",
+        "a": "Yes. Dogs and cats are a major part of the practice. This includes routine check-ups, vaccination, internal medicine, cardiac evaluation, and follow-up care."
       },
       "homeVisit": {
-        "q": "Can I book a home visit?",
-        "a": "Yes, home visits are available in Nashik and surrounding areas. Please book in advance through our online form or WhatsApp."
+        "q": "Can you visit our home or farm?",
+        "a": "Home visits and farm visits are available in the Nandgaon and Nashik area. Please contact Dr. Akshata directly to discuss and schedule."
       },
       "emergency": {
-        "q": "What are your emergency hours?",
-        "a": "Emergency services are available 24/7. Call +91 8788198731 for urgent cases."
+        "q": "What should I do in an emergency?",
+        "a": "Call directly: Dr. Akshata Bhand — +91 8788198731. For assistance: Yash Bhand — +91 8262883668. You can also WhatsApp +91 8788198731."
       },
-      "prescription": {
-        "q": "Do you provide online prescriptions?",
-        "a": "Yes, existing patients can request repeat prescriptions through our online portal after a brief consultation."
+      "livestock": {
+        "q": "Do you treat cattle, goats and other livestock?",
+        "a": "Yes. Livestock care — including cattle, buffalo, goats and sheep — is part of the practice. This covers health check-ups, disease management, vaccination and artificial insemination."
       }
     }
   },
   "contact": {
-    "title": "Contact Us",
+    "title": "Contact",
     "phone": "Phone",
+    "phoneDr": "Dr. Akshata Bhand (Clinical)",
+    "phoneYash": "Yash Bhand (Assistance / Bookings)",
     "whatsapp": "WhatsApp",
     "email": "Email",
-    "address": "Address",
+    "address": "Location",
+    "addressValue": "Nandgaon, Nashik, Maharashtra",
     "hours": "Working Hours",
-    "hoursValue": "Mon-Sat 10 AM – 7 PM, Emergency 24/7",
-    "sendMessage": "Send Message",
-    "name": "Name",
-    "message": "Message"
+    "hoursValue": "Mon–Sat, 10 AM to 7 PM",
+    "sendMessage": "Send a Message",
+    "name": "Your Name",
+    "message": "Your Message",
+    "formNote": "Alternatively, you can WhatsApp or call directly for a faster response."
   },
   "footer": {
     "quickLinks": "Quick Links",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "copyright": "© Dr. Akshada Chandrakant Bhand. All rights reserved."
+    "copyright": "© Dr. Akshata Bhand. All rights reserved."
   },
   "common": {
     "learnMore": "Learn More",
     "viewAll": "View All",
     "readMore": "Read More",
     "loading": "Loading...",
-    "error": "Something went wrong",
+    "error": "Something went wrong. Please try again.",
     "back": "Back",
     "next": "Next",
     "submit": "Submit"
@@ -269,5 +261,11 @@
     "myPets": "My Pets",
     "healthRecords": "Health Records",
     "prescriptions": "Prescription Requests"
+  },
+  "emergency": {
+    "title": "Emergency Contact",
+    "subtitle": "Select a contact to call",
+    "or": "OR",
+    "whatsappNow": "WhatsApp Now"
   }
 }

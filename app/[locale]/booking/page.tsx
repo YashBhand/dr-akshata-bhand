@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import {
   Clock,
   Users,
@@ -37,6 +36,24 @@ export default function BookingPage() {
   const locale = useLocale();
   const [currentStep, setCurrentStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
+
+  const next = () => {
+    if (currentStep === 1) {
+      if (!formData.ownerName.trim()) {
+        setErrors((prev) => ({ ...prev, ownerName: "Name is required" }));
+        return;
+      }
+      if (!formData.phone.trim()) {
+        setErrors((prev) => ({ ...prev, phone: "Phone is required" }));
+        return;
+      }
+    }
+    if (currentStep < 4) setCurrentStep(currentStep + 1);
+  };
+
+  const back = () => {
+    if (currentStep > 1) setCurrentStep(currentStep - 1);
+  };
   const [formData, setFormData] = useState({
     ownerName: "",
     phone: "",
@@ -52,54 +69,110 @@ export default function BookingPage() {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const updateField = (field: string, value: any) => {
+  const updateField = (field: string, value: unknown) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
     if (errors[field]) {
       setErrors((prev) => ({ ...prev, [field]: "" }));
     }
   };
 
-  const validateStep = (step: number): boolean => {
-    const newErrors: Record<string, string> = {};
-    if (step === 1) {
-      if (!formData.ownerName.trim()) newErrors.ownerName = "Name is required";
-      if (!formData.phone.trim()) newErrors.phone = "Phone is required";
-      else if (formData.phone.replace(/\D/g, "").length < 10) newErrors.phone = "Enter valid phone number";
-    }
-    if (step === 2) {
-      if (!formData.animalType) newErrors.animalType = "Please select animal type";
-      if (!formData.complaint.trim()) newErrors.complaint = "Please describe the complaint";
-    }
-    if (step === 3) {
-      if (!formData.preferredDate) newErrors.preferredDate = "Select a date";
-      if (!formData.preferredTime) newErrors.preferredTime = "Select a time";
-    }
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
+  const [referenceNo, setReferenceNo] = useState<string>("");
+
+  const buildWhatsAppText = (target: "dr" | "yash" | "owner"): string => {
+    const isOwner = target === "owner";
+    const greeting = isOwner
+      ? `Hello ${formData.ownerName || "Doctor"},`
+      : `Hello ${target === "dr" ? "Dr. Akshata" : "Yash Bhand"},`;
+
+    const header = isOwner
+      ? `*✅ My Appointment Booking Confirmation*`
+      : `*🔔 NEW APPOINTMENT BOOKING REQUEST*`;
+
+    return encodeURIComponent(
+      `${greeting}\n\n` +
+        `${header}\n\n` +
+        `📋 *Reference:* BK${referenceNo}\n\n` +
+        `👤 *Owner Details:*\n` +
+        `• Name: ${formData.ownerName || "-"}\n` +
+        `• Phone: ${formData.phone || "-"}\n` +
+        `• Email: ${formData.email || "-"}\n\n` +
+        `🐾 *Patient Details:*\n` +
+        `• Animal: ${formData.animalType || "-"}\n` +
+        `• Breed: ${formData.breed || "-"}\n` +
+        `• Age: ${formData.age || "-"}\n` +
+        `• Weight: ${formData.weight || "-"}\n\n` +
+        `📝 *Complaint:*\n${formData.complaint || "-"}\n\n` +
+        `📅 *Preferred Slot:*\n` +
+        `• Date: ${formData.preferredDate || "-"}\n` +
+        `• Time: ${formData.preferredTime || "-"}\n\n` +
+        `💰 *Consultation Fee:* ₹500\n\n` +
+        `${isOwner
+          ? `I will wait for your confirmation via WhatsApp/Phone. Thank you, Dr. Akshata! 🙏`
+          : `Please review and confirm via WhatsApp/Phone at the earliest.\n\nRegards,\nOnline Booking Portal`
+        }`
+    );
   };
 
-  const next = () => {
-    if (validateStep(currentStep)) {
-      if (currentStep < 4) setCurrentStep(currentStep + 1);
-    }
-  };
-
-  const back = () => {
-    if (currentStep > 1) setCurrentStep(currentStep - 1);
+  const buildEmailParams = () => {
+    const subject = encodeURIComponent(
+      `New Appointment Booking - BK${referenceNo} - ${formData.ownerName || "New Patient"}`
+    );
+    const body = encodeURIComponent(
+      `Dr. Akshata Bhand & Yash Bhand,\n\n` +
+        `A new appointment has been booked through the website.\n\n` +
+        `REFERENCE: BK${referenceNo}\n\n` +
+        `========== OWNER DETAILS ==========\n` +
+        `Name: ${formData.ownerName || "-"}\n` +
+        `Phone: ${formData.phone || "-"}\n` +
+        `Email: ${formData.email || "-"}\n\n` +
+        `========== PATIENT DETAILS ==========\n` +
+        `Animal Type: ${formData.animalType || "-"}\n` +
+        `Breed: ${formData.breed || "-"}\n` +
+        `Age: ${formData.age || "-"}\n` +
+        `Weight: ${formData.weight || "-"}\n\n` +
+        `========== COMPLAINT ==========\n` +
+        `${formData.complaint || "-"}\n\n` +
+        `========== PREFERRED SLOT ==========\n` +
+        `Date: ${formData.preferredDate || "-"}\n` +
+        `Time: ${formData.preferredTime || "-"}\n\n` +
+        `Consultation Fee: ₹500\n\n` +
+        `--\nThis email was auto-generated from the Online Booking System.\nPlease confirm the appointment by calling or WhatsApp the patient.`
+    );
+    const cc = formData.email ? encodeURIComponent(formData.email) : "";
+    return {
+      to: `drakshata.bhand@gmail.com?cc=${cc ? cc + "," : ""}yash.bhand87@gmail.com&subject=${subject}&body=${body}`,
+    };
   };
 
   const submit = () => {
-    if (validateStep(currentStep)) {
-      setSubmitted(true);
+    if (!formData.ownerName.trim()) {
+      setErrors((prev) => ({ ...prev, ownerName: "Name is required" }));
+      return;
     }
+    if (!formData.phone.trim()) {
+      setErrors((prev) => ({ ...prev, phone: "Phone number is required" }));
+      return;
+    }
+    const ref = Math.floor(Math.random() * 900000 + 100000).toString();
+    setReferenceNo(ref);
+    setSubmitted(true);
+
+    const waText = buildWhatsAppText("dr");
+    const waDr = window.open(
+      `https://wa.me/918788198731?text=${waText}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+    if (waDr) waDr.focus();
   };
 
   if (submitted) {
+    const emailParams = buildEmailParams();
     return (
       <div className="overflow-hidden">
         <section className="section-padding bg-gradient-to-br from-primary/10 via-surface to-accent/10 dark:from-primary/20 dark:via-gray-900 dark:to-accent/20">
           <div className="container-custom px-4 md:px-8">
-            <div className="max-w-2xl mx-auto text-center">
+            <div className="max-w-3xl mx-auto text-center">
               <div className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-green-500/10 text-green-500">
                 <CheckCircle2 size={56} />
               </div>
@@ -107,14 +180,14 @@ export default function BookingPage() {
                 {t("success")}
               </h1>
               <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-                We'll contact you shortly on WhatsApp or phone to confirm your appointment details.
+                Your booking details are ready. Please tap below to send notifications on WhatsApp and Email to confirm your appointment.
               </p>
 
               <Card className="mt-10 text-left">
                 <div className="flex items-center gap-2 mb-6 pb-4 border-b border-gray-100 dark:border-gray-700">
                   <Sparkles className="text-gold" size={20} />
                   <span className="font-semibold text-gray-900 dark:text-white">
-                    {t("reference")}: BK{Math.floor(Math.random() * 900000 + 100000)}
+                    {t("reference")}: BK{referenceNo}
                   </span>
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2 text-sm">
@@ -147,6 +220,54 @@ export default function BookingPage() {
                 </div>
               </Card>
 
+              <div className="mt-10 rounded-3xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-xl p-6 md:p-8">
+                <h2 className="font-heading text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                  ✅ Confirm via WhatsApp & Email
+                </h2>
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-6">
+                  Tap each button below to send your booking details with a pre-filled message template.
+                </p>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <a
+                    href={`https://wa.me/918788198731?text=${buildWhatsAppText("dr")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 justify-center rounded-2xl bg-green-500 text-white px-5 py-3.5 font-semibold hover:bg-green-600 transition-colors"
+                  >
+                    <MessageCircle size={22} />
+                    WhatsApp Dr. Akshata
+                  </a>
+                  <a
+                    href={`https://wa.me/918262883668?text=${buildWhatsAppText("yash")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 justify-center rounded-2xl bg-emerald-600 text-white px-5 py-3.5 font-semibold hover:bg-emerald-700 transition-colors"
+                  >
+                    <MessageCircle size={22} />
+                    WhatsApp Yash Bhand
+                  </a>
+                  <a
+                    href={`https://wa.me/91${formData.phone.replace(/\D/g, "").slice(-10)}?text=${buildWhatsAppText("owner")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 justify-center rounded-2xl border-2 border-green-500 text-green-600 bg-green-50 dark:bg-green-900/20 dark:text-green-400 px-5 py-3.5 font-semibold hover:bg-green-100 dark:hover:bg-green-900/40 transition-colors"
+                  >
+                    <MessageCircle size={22} />
+                    Send to My WhatsApp
+                  </a>
+                  <a
+                    href={`mailto:${emailParams.to}`}
+                    className="flex items-center gap-3 justify-center rounded-2xl bg-primary text-white px-5 py-3.5 font-semibold hover:bg-primary-dark transition-colors"
+                  >
+                    <Mail size={22} />
+                    Send Email
+                  </a>
+                </div>
+                <p className="mt-6 text-xs text-gray-500 dark:text-gray-400">
+                  💡 Your appointment will be confirmed within 30 minutes during working hours (Mon-Sat 10 AM - 7 PM).
+                </p>
+              </div>
+
               <div className="mt-10 flex flex-wrap justify-center gap-4">
                 <Link href={`/${locale}`}>
                   <Button variant="outline" size="lg" className="gap-2">
@@ -154,9 +275,10 @@ export default function BookingPage() {
                     Back to Home
                   </Button>
                 </Link>
-                <a href="https://wa.me/918788198731" target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" variant="accent" className="gap-2">
-                    WhatsApp Us
+                <a href="tel:+918788198731">
+                  <Button size="lg" variant="ghost" className="gap-2">
+                    <Phone size={20} />
+                    Call Now
                   </Button>
                 </a>
               </div>

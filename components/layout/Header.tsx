@@ -18,7 +18,6 @@ export function Header() {
     { href: `/${locale}`, label: t("home") },
     { href: `/${locale}/about`, label: t("about") },
     { href: `/${locale}/services`, label: t("services") },
-    { href: `/${locale}/specializations`, label: t("specializations") },
     { href: `/${locale}/research`, label: t("research") },
     { href: `/${locale}/blog`, label: t("blog") },
     { href: `/${locale}/farmer-corner`, label: t("farmerCorner") },
@@ -33,7 +32,7 @@ export function Header() {
             <Stethoscope size={22} />
           </div>
           <span className="font-heading text-lg font-bold text-primary md:text-xl">
-            Dr. Akshada Bhand
+            Dr. Akshata Bhand
           </span>
         </Link>
 

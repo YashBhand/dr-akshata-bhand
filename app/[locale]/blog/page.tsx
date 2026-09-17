@@ -8,14 +8,9 @@ import { FaqItem } from "@/components/ui/FaqItem";
 import {
   BookOpen,
   ChevronRight,
-  Search,
   Send,
   Calendar,
   Tag,
-  Heart,
-  ShieldCheck,
-  Leaf,
-  Dog,
   User,
 } from "lucide-react";
 
@@ -262,7 +257,7 @@ export default async function BlogPage({ params: { locale } }: PageProps) {
             Have More Questions?
           </h2>
           <p className="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
-            Schedule a consultation with Dr. Akshada for personalized advice regarding your pet or livestock.
+            Schedule a consultation with Dr. Akshata for personalized advice regarding your pet or livestock.
           </p>
           <div className="mt-8 flex justify-center flex-wrap gap-4">
             <Link href={`/${locale}/booking`}>

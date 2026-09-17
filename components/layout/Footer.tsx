@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
-import { Stethoscope, Phone, Mail, MapPin, Share2, MessageSquare, Users } from "lucide-react";
+import { Stethoscope, Phone, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -11,7 +11,7 @@ export function Footer() {
   const quickLinks = [
     { href: `/${locale}/about`, label: nav("about") },
     { href: `/${locale}/services`, label: nav("services") },
-    { href: `/${locale}/specializations`, label: nav("specializations") },
+    { href: `/${locale}/farmer-corner`, label: nav("farmerCorner") },
     { href: `/${locale}/research`, label: nav("research") },
     { href: `/${locale}/blog`, label: nav("blog") },
     { href: `/${locale}/contact`, label: nav("contact") },
@@ -27,23 +27,18 @@ export function Footer() {
                 <Stethoscope size={22} />
               </div>
               <span className="font-heading text-lg font-bold text-primary dark:text-primary-light">
-                Dr. Akshada Bhand
+                Dr. Akshata Bhand
               </span>
             </Link>
+            <p className="mt-3 text-sm font-medium text-accent dark:text-accent">
+              Livestock Development Officer, Nandgaon
+            </p>
+            <p className="mt-1 text-xs text-amber-600 dark:text-amber-400 font-semibold">
+              (Class I Government Officer)
+            </p>
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-300">
               {contact("hoursValue")}
             </p>
-            <div className="mt-6 flex gap-4">
-              <a href="#" className="text-gray-500 hover:text-primary transition-colors">
-                <Share2 size={20} />
-              </a>
-              <a href="#" className="text-gray-500 hover:text-primary transition-colors">
-                <MessageSquare size={20} />
-              </a>
-              <a href="#" className="text-gray-500 hover:text-primary transition-colors">
-                <Users size={20} />
-              </a>
-            </div>
           </div>
 
           <div>
@@ -71,20 +66,28 @@ export function Footer() {
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-3">
                 <Phone size={18} className="mt-0.5 text-primary shrink-0" />
-                <span className="text-sm text-gray-600 dark:text-gray-300">
-                  +91 8788198731
-                </span>
+                <div className="text-sm text-gray-600 dark:text-gray-300">
+                  <p className="font-semibold text-gray-900 dark:text-white">{contact("phoneDr")}</p>
+                  <a href="tel:+918788198731" className="hover:text-primary transition-colors">+91 8788198731</a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone size={18} className="mt-0.5 text-accent shrink-0" />
+                <div className="text-sm text-gray-600 dark:text-gray-300">
+                  <p className="font-semibold text-gray-900 dark:text-white">{contact("phoneYash")}</p>
+                  <a href="tel:+918262883668" className="hover:text-accent transition-colors">+91 8262883668</a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={18} className="mt-0.5 text-primary shrink-0" />
-                <span className="text-sm text-gray-600 dark:text-gray-300">
-                  drakshada.bhand@gmail.com
-                </span>
+                <a href="mailto:drakshata.bhand@gmail.com" className="text-sm text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
+                  drakshata.bhand@gmail.com
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="mt-0.5 text-primary shrink-0" />
                 <span className="text-sm text-gray-600 dark:text-gray-300">
-                  Nashik, Maharashtra, India
+                  {contact("addressValue")}
                 </span>
               </li>
             </ul>
@@ -106,20 +109,10 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-200 pt-8 dark:border-gray-800">
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-sm text-gray-600 dark:text-gray-300">
-              {t("copyright")}
-            </p>
-            <div className="flex gap-6">
-              <Link href="#" className="text-sm text-gray-600 hover:text-primary dark:text-gray-300">
-                {t("privacy")}
-              </Link>
-              <Link href="#" className="text-sm text-gray-600 hover:text-primary dark:text-gray-300">
-                {t("terms")}
-              </Link>
-            </div>
-          </div>
+        <div className="mt-12 border-t border-gray-200 pt-8 dark:border-gray-800 text-center md:text-left">
+          <p className="text-sm text-gray-600 dark:text-gray-300">
+            {t("copyright")}
+          </p>
         </div>
       </div>
     </footer>

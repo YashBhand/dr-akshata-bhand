@@ -24,7 +24,7 @@ type PageProps = {
   params: { locale: string };
 };
 
-const serviceIcons: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+const serviceIcons: Record<string, any> = {
   checkup: Stethoscope,
   vaccination: Syringe,
   lab: Microscope,
