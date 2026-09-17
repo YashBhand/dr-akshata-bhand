@@ -19,8 +19,25 @@ export function generateStaticParams() {
 export async function generateMetadata({ params: { locale } }: Props) {
   const t = await getTranslations({ locale, namespace: "metadata" });
   return {
+    metadataBase: new URL("https://dr-akshata-bhand.vercel.app"),
     title: t("title"),
     description: t("description"),
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `https://dr-akshata-bhand.vercel.app/${locale}`,
+      siteName: "Dr. Akshata Bhand Veterinary Practice",
+      locale: locale === "mr" ? "mr_IN" : "en_IN",
+      type: "website",
+      images: [
+        {
+          url: "/images/dr-akshata-bhand.jpg",
+          width: 768,
+          height: 1024,
+          alt: "Dr. Akshata Bhand — Veterinary Physician",
+        },
+      ],
+    },
   };
 }
 
